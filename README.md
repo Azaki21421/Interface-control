@@ -15,7 +15,8 @@ A graphical application for managing network interfaces and routing traffic from
 pip install psutil
 ```
 - Windows OS with administrative privileges.
-- tapctl.exe for managing TAP interfaces (usually part of OpenVPN installation).
+- tapctl.exe for managing TAP interfaces (usually part of [OpenVPN](https://openvpn.net/downloads/openvpn-connect-v3-windows.msi) installation).
+- [ForceBindIP](https://r1ch.net/projects/forcebindip) (Leave link, cause you can download just source and do not install it)
 
 # Installation
 1. Clone the repository:
@@ -37,10 +38,10 @@ python network_manager.py
 ```Note: The script requires administrator privileges to manage network interfaces. It will prompt you to run as an administrator if not already elevated.```
 
 # Usage
-- Add Interface: Click "Добавить интерфейс" to create a new TAP interface.
-- Remove Interface: Click "Удалить интерфейс" to delete an existing interface.
+- Add Interface: Click "Add Interface" to create a new TAP interface.
+- Remove Interface: Click "Remove Interface" to delete an existing interface.
 - Assign Routes:
- - Click "Назначить маршруты" to open the process selection window.
+ - Click "Assign Routes" to open the process selection window.
  - Select a process by PID or name.
  - Choose a network interface to bind the application’s traffic.
 
