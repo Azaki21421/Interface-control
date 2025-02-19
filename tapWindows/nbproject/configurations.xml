@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>tuntap.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>tuntap.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Release-x86" type="2">
+      <toolsSet>
+        <compilerSet>i686-w64-mingw32|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <architecture>1</architecture>
+          <commandlineTool>i686-w64-mingw32-gcc</commandlineTool>
+          <commandLine>-static-libgcc $(shell pkg-config --cflags jdk) ${EXTRA_CFLAGS}</commandLine>
+        </cTool>
+        <linkerTool>
+          <output>dist/Release/libTunTapWindows.dll</output>
+        </linkerTool>
+      </compileType>
+      <item path="tuntap.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="tuntap.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release-x86_64" type="2">
+      <toolsSet>
+        <compilerSet>x86_64-w64-mingw32|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <architecture>2</architecture>
+          <commandlineTool>x86_64-w64-mingw32-gcc</commandlineTool>
+          <commandLine>-static-libgcc $(shell pkg-config --cflags jdk) ${EXTRA_CFLAGS}</commandLine>
+        </cTool>
+        <linkerTool>
+          <output>dist/Release/libTunTapWindows64.dll</output>
+        </linkerTool>
+      </compileType>
+      <item path="tuntap.c" ex="false" tool="0" flavor2="9">
+      </item>
+      <item path="tuntap.h" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
