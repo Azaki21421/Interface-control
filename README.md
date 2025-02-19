@@ -47,8 +47,8 @@ python network_manager.py
 
 # To-Do List
 
-1. Replace OpenVPN Dependency:
- - The current implementation uses tapctl.exe from OpenVPN to manage TAP interfaces. Find a suitable alternative that does not rely on OpenVPN.
+1. ~~Replace OpenVPN Dependency:~~
+ ~~- The current implementation uses tapctl.exe from OpenVPN to manage TAP interfaces. Find a suitable alternative that does not rely on OpenVPN.~~
 2. Find Alternative to ForceBindIP:
  - The application currently uses ForceBindIP to bind applications to specific network interfaces. Consider alternatives or custom implementations for binding traffic to interfaces.
 3. Enhance Error Handling:
