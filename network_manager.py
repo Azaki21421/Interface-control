@@ -139,6 +139,7 @@ class NetworkManagerApp:
 
             interface_ip = None
             for addr in psutil.net_if_addrs().get(interface, []):
+
                 if addr.family == socket.AF_INET:
                     interface_ip = addr.address
                     break
@@ -147,7 +148,7 @@ class NetworkManagerApp:
                 messagebox.showerror("Error", f"Failed to find IP address for interface {interface}.")
                 return
 
-            forcebindip_path = r"C:\Program Files (x86)\ForceBindIP\ForceBindIP.exe"
+            forcebindip_path = r"ForceBindIP\ForceBindIP.exe"
             if not os.path.exists(forcebindip_path):
                 messagebox.showerror("Error", "ForceBindIP not found. Make sure it is installed.")
                 return
