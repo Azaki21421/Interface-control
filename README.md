@@ -55,6 +55,8 @@ python network_manager.py
  - Improve error handling when managing interfaces and routing traffic.
 4. Cross-Platform Support:
  - Extend functionality to support other operating systems like Linux and macOS.
+5. Configuration for created interface:
+ - Add posibility to modify created network interface in app
 
 # Dependencies
 - ```psutil```: For retrieving system and network interface information.
